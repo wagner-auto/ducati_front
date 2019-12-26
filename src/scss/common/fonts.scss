@@ -1,0 +1,24 @@
+@include font-face("PT Sans Bold", "/dist/fonts/PTSans-Bold/PTSans-Bold", 700);
+@include font-face("PT Sans Bold Italic", "/dist/fonts/PTSans-BoldItalic/PTSans-BoldItalic", 700);
+@include font-face("PT Sans Italic", "/dist/fonts/PTSans-Italic/PTSans-Italic", 400);
+@include font-face("PT Sans Regular", "/dist/fonts/PTSans-Regular/PTSans-Regular", 400);
+
+%font_regular {
+  font-family: "PT Sans Regular", sans-serif;
+  font-weight: 400;
+}
+
+%font_italic {
+  font-family: 'PT Sans Italic', cursive;
+  font-weight: 400;
+}
+
+%font_italic_bold {
+  font-family: 'PT Sans Bold Italic', cursive;
+  font-weight: 700;
+}
+
+%font_bold {
+  font-family: 'PT Sans Bold', sans-serif;
+  font-weight: 700;
+}

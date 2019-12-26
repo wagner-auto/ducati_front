@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ducati Вагнер</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no,user-scalable=no">
+    <link rel="stylesheet" href="/dist/bundle.css">
+</head>
+<body>
+<section class="section banner">
+    <img src="images/banner.jpg" class="banner__image"/>
+    <div class="banner__content">
+        <h3 class="banner__content-head">Ducati Вагнер</h3>
+        <p class="banner__content-text">The new Panigable V4 R embodies the maximum expression of Ducati values:
+            style, sophistication, performance</p>
+    </div>
+    <div class="banner__content right">
+        <h3 class="banner__content-head">Адрес</h3>
+        <p class="banner__content-text">
+            Санкт-Петербург Выборгское ш., 352А,<br/>
+            <a href="tel:+78123319996">тел. +7(812) 331-99-96</a>
+        </p>
+    </div>
+</section>
+<section class="section form">
+    <div class="container">
+        <h2 class="form__head">Заказать звонок</h2>
+        <p class="form__text">Указывая адрес своей электронной почты вы всегда будетев курсе последних новостей Ducati,
+            а также всех промоакций в том числе всевозможных конкурсов, акций и тест-драйвов.</p>
+        <form action="#" method="post" class="vertical">
+            <div class="form-group">
+                <input type="checkbox" id="legal" required name="legal">
+                <label for="legal" class="form__label">Подтвердив соответствующим образом вы соглашаетесь на обработку
+                    ваших персональных данных
+                    компанией VGR и официальными дилерами Ducati. </label>
+            </div>
+            <div class="form-group">
+                <input type="text" name="name" class="form__input" placeholder="Имя"/>
+            </div>
+            <div class="form-group">
+                <input type="tel" name="phone" class="form__input" placeholder="Телефон"/>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" class="form__input" placeholder="Email"/>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="отправить" class="btn btn__submit">
+            </div>
+        </form>
+    </div>
+</section>
+<section class="section map">
+    <h2 class="map__head">Официальный дилер Ducati</h2>
+    <div id="map" class="yandex_maps">
+
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer__gradient">
+        <div class="content__center">
+            <img src="images/logo_2d.png" class="footer__logo"/>
+        </div>
+    </div>
+</footer>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=865beb39-ad21-46fa-bd7f-6abf34674787&lang=ru_RU" type="text/javascript">
+</script>
+<script async src="/dist/bundle.js"></script>
+</body>
+</html>

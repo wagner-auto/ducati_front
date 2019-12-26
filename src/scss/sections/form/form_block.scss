@@ -1,0 +1,19 @@
+.form {
+  @include media_font_size(24px);
+  padding: 90px 0;
+  color: $ducati_text_color;
+  @include media-breakpoint-down(md){
+    padding: 20px 0;
+  }
+  &__head {
+    text-align: center;
+    font-size: 1.5em;
+    @extend %font_regular;
+  }
+
+  &__text {
+    font-size: 1em;
+    @extend %font_regular;
+  }
+
+}

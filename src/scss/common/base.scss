@@ -1,0 +1,26 @@
+
+.section{
+  width: 100%;
+}
+a{
+  color: $ducati_red;
+}
+body{
+  color: #fafafa;
+}
+
+.btn{
+  @extend %font_bold;
+  text-transform: uppercase;
+  border: 1px solid $ducati_red;
+  background-color: $ducati_red;
+  color: #ebebeb;
+  padding: 10px 15px;
+  &__submit{
+    @include media_font_size(24px);
+    padding: 30px 60px;
+    @include media-breakpoint-down(md){
+      padding: 15px 30px;
+    }
+  }
+}

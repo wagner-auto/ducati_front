@@ -1,0 +1,25 @@
+.form {
+  &-group {
+    display: block;
+    padding: 10px 0;
+    @include media_font_size(24px);
+  }
+
+  &__label {
+    @extend %font_regular;
+    @include media_font_size(24px);
+  }
+  &__input{
+    width: 100%;
+    font-size: 1em;
+    color: $ducati_text_form;
+    padding: 20px 30px;
+    border: 1px solid #ebebeb;
+    @include media-breakpoint-down(md){
+      padding: 10px 20px;
+    }
+    @include media-breakpoint-down(xs){
+      padding: 5px 10px;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.yandex_maps{
+  height: 800px;
+  width: 100%;
+  @include media-breakpoint-down(md){
+    height: 320px;
+  }
+}
+
+.map__head{
+  @extend %font_regular;
+  @include media_font_size(40px);
+  text-align: center;
+  color: $ducati_text_color;
+}
