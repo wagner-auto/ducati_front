@@ -1,0 +1,6 @@
+.modal__callback{
+  width: 50%;
+  @include media-breakpoint-down(xs){
+    width: 90%;
+  }
+}

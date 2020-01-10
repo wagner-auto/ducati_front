@@ -1,26 +1,54 @@
 
-.section{
+.section {
   width: 100%;
 }
-a{
+
+a {
   color: $ducati_red;
+  cursor: pointer;
 }
-body{
+
+body {
   color: #fafafa;
 }
 
-.btn{
+section, article {
+  padding-left: 30px;
+  padding-right: 30px;
+  @include media-breakpoint-down(xs) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.btn {
   @extend %font_bold;
   text-transform: uppercase;
   border: 1px solid $ducati_red;
   background-color: $ducati_red;
   color: #ebebeb;
   padding: 10px 15px;
-  &__submit{
+  cursor: pointer;
+
+  &__submit {
     @include media_font_size(24px);
     padding: 30px 60px;
-    @include media-breakpoint-down(md){
+    @include media-breakpoint-down(md) {
       padding: 15px 30px;
     }
   }
+
+  &__banner {
+    @include media_font_size(24px);
+    padding: 30px 60px;
+    @include media-breakpoint-down(md) {
+      padding: 15px 30px;
+    }
+  }
+}
+
+.success {
+  color: $ducati_red;
+  @extend %font_bold;
+  font-size: 1.5em;
 }

@@ -10,9 +10,12 @@ if (!mix.inProduction()) {
     // mix.bundleAnalyzer();
 }
 
-mix.js("src/js/index.js", "dist/bundle.js")
-    .sass("src/scss/main.scss", "dist/bundle.css")
-    .copy("src/fonts","dist/fonts")
+mix.js("src/js/index.js", "web/dist/bundle.js")
+    .sass("src/scss/main.scss", "web/dist/bundle.css")
+    .copy("src/fonts","web/dist/fonts")
+    .autoload({
+        jquery: ['$', 'window.jQuery', 'jQuery']
+    })
     .options({
         processCssUrls: false,
         autoprefixer: {
@@ -29,7 +32,7 @@ mix.js("src/js/index.js", "dist/bundle.js")
     })
     .sourceMaps(false, "source-map")
     .browserSync({
-        proxy: "landing.local",
+        proxy: "ducati.local",
         files:["src/**/*"]
     });
 

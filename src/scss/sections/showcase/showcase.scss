@@ -1,0 +1,37 @@
+.showcase{
+  &__item{
+    color:$ducati_text_color;
+    text-align: center;
+    @include media_font_size(24px);
+    &--head{
+      font-size: $head_size;
+      @extend %font_regular;
+      margin-bottom: 0;
+    }
+    &--container{
+      display: flex;
+      width: 100%;
+      height: 150px;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-end;
+      @include media-breakpoint-down(xs){
+        height: 80px;
+      }
+    }
+    &--fullsize{
+      .showcase__item--image{
+        max-width: 100%;
+      }
+    }
+    &--image{
+      max-width: 80%;
+      max-height: 150px;
+    }
+    &--price{
+      font-size: $text_size;
+      @extend %font_regular;
+    }
+
+  }
+}

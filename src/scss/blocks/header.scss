@@ -1,0 +1,27 @@
+.header{
+  padding: 30px 30px;
+  width: 100%;
+  background: transparent;
+  @include media-breakpoint-down(xs){
+    padding: 0px 0px 30px;
+  }
+  &__gradient{
+    box-shadow: 0 6px 24px 0 rgba(0,0,0,0.2);
+    background: linear-gradient(to bottom,#fff, #ececec);
+  }
+  &__logo{
+    max-height: 77px;
+  }
+  &__grid{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+  }
+  &__link{
+    @extend %font_regular;
+    @include media_font_size(18px);
+    color:$ducati_text_color;
+    text-decoration: none;
+  }
+}

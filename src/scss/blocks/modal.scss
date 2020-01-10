@@ -1,0 +1,14 @@
+.modal{
+  display: none;
+  color:$ducati_text_color;
+  @include  media_font_size(24px);
+  &__head{
+    @extend %font_bold;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  &__text{
+    @extend %font_regular;
+    font-size: 1em;
+  }
+}
