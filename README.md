@@ -1,0 +1,1 @@
+[Фронт](https://wagner-auto.github.io/ducati_front/index.html)
