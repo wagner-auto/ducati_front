@@ -23,5 +23,6 @@
     @include media_font_size(18px);
     color:$ducati_text_color;
     text-decoration: none;
+    @extend %link_higlight;
   }
 }

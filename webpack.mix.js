@@ -32,7 +32,7 @@ mix.js("src/js/index.js", "web/dist/bundle.js")
     })
     .sourceMaps(false, "source-map")
     .browserSync({
-        proxy: "ducati.local",
+        proxy: "ducatif.local",
         files:["src/**/*"]
     });
 

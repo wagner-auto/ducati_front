@@ -1,0 +1,25 @@
+%link_higlight{
+    &:hover{
+        color:$ducati_red;
+    }
+}
+
+%font_regular {
+    font-family: "PT Sans Regular", sans-serif;
+    font-weight: 400;
+}
+
+%font_italic {
+    font-family: 'PT Sans Italic', cursive;
+    font-weight: 400;
+}
+
+%font_italic_bold {
+    font-family: 'PT Sans Bold Italic', cursive;
+    font-weight: 700;
+}
+
+%font_bold {
+    font-family: 'PT Sans Bold', sans-serif;
+    font-weight: 700;
+}
