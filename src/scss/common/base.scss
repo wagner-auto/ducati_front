@@ -29,7 +29,7 @@ section, article {
   color: #ebebeb;
   padding: 10px 15px;
   cursor: pointer;
-
+  transition: all .5s ease-in;
   &__submit {
     @include media_font_size(24px);
     padding: 30px 60px;
@@ -44,6 +44,10 @@ section, article {
     @include media-breakpoint-down(md) {
       padding: 15px 30px;
     }
+  }
+
+  &:hover{
+    @include shadow(rgba(237,1,32,0.5));
   }
 }
 

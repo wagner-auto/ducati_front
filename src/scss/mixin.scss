@@ -65,3 +65,7 @@
     font-size: $px_size - 8px
   }
 }
+
+@mixin shadow($color){
+  box-shadow: 0 6px 24px 0 $color;
+}
